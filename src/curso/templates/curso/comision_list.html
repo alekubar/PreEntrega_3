@@ -1,0 +1,10 @@
+{% extends "curso/base.html" %}
+
+{% block contenido %}
+    <h1>Listado de Color</h1>
+    <ul>
+        {% for object in object_list %}
+            <p>{{ object.curso}}{{ object.numero}}{{ object.fecha_inicio}}</p>
+        {% endfor %}
+    </ul>
+{% endblock contenido %}
